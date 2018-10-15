@@ -1,9 +1,9 @@
 pipeline {
   agent none
   stages {
-    stage('build') {
+    stage('dockerfile') {
       steps {
-        sh 'dotnet build'
+        sh 'docker build -t dockerci'
       }
     }
   }
