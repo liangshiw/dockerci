@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'dockerci'
-    }
-
-  }
+  agent any
   stages {
     stage('dockerfile') {
       steps {
