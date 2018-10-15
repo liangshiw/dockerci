@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('dockerfile') {
       steps {
-        sh 'docker build -t dockerci'
+        sh 'dotnet build'
       }
     }
   }
