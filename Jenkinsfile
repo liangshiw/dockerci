@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('dockerfile') {
       steps {
-        sh 'dotnet build'
+        sh 'docker version'
       }
     }
   }
