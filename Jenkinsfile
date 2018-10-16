@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('dockerfile') {
+    stage('') {
       steps {
         sh 'docker version'
       }
